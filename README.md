@@ -6,7 +6,7 @@
 
 Usage: `udpclient [dest host or IP] [dest port] [payload]`
 
-Example: `udpclient "my.metrics.host.com" 8094 "boost.udp.test,host=testhost count=1"`
+Example: `udpclient "my.metrics.host.com" 8094 "TEST"`
 
 Many useful packages use UDP as a means of receiving input form distributed sources. Such packages include: Logstash, InfluxDB, Telegraf, and various statsd clients.  Some of the main benefits of UDP for certain distributed data applilcations are:
 
@@ -20,7 +20,7 @@ This repo also comes with a trival udpsersver.  It will be automatically built b
 
 ```
 $ udpserver 8094 &
-$ Listening on port 8094
+Listening on port 8094
 $ udpclient localhost 8094 "TEST"
-$ Received: TEST
+Received: TEST
 ```
