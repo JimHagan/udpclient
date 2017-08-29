@@ -14,9 +14,9 @@ Many useful packages use UDP as a means of receiving input form distributed sour
 
 - Small packet header overhead for udp(only 8 bytes) where as tcp has 20 bytes of header
 
-#Testing
+## Testing
 
-This repo also comes with a trival udpsersver.  It will be automatically built by make.sh.  To run simple use the commmand `udpserver [port]`.  By running this on the same host you are testing the client you can go through the following sequence...
+This repo also comes with a trival UDP server (also written with Boost).  It will be automatically built by make.sh.  To run simple use the commmand `udpserver [port]`.  By running this on the same host you are testing the client you can go through the following sequence...
 
 ```
 $ udpserver 8094 &
