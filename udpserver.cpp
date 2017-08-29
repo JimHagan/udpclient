@@ -1,3 +1,7 @@
+/*
+ * Derived from example of Christopher M. Kohlhoff
+ *
+ * /
 #include <ctime>
 #include <iostream>
 #include <string>
